@@ -1,0 +1,496 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+*,*::before,*:after{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* start */
+
+body{
+    font-family: 'San Francisco',"PingFangSC", Helvetica,Arial,"Microsoft JhengHei",sans-serif;
+    line-height: 1.5;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+.wrap{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    margin: 0 auto;
+    width: 58%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu-mobile-btn{
+    display: none;
+}
+
+.header h1 a{
+    display: block;
+    width: 128px;
+    height: 38px;
+    background: url(./img/d’Perfume.png) no-repeat ;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.menu-pc{
+    display: flex;
+    gap: 32px;
+}
+
+.menu-pc a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;line-height: 1.5;
+    color: #8D8D8D;
+    text-decoration: none;
+}
+
+.menu-pc a:hover{
+    color: #916000;
+}
+
+/* sort */
+.sort{
+    background: #916000;
+}
+
+.sort ul{
+    width: 58%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+}
+
+.sort ul li a{
+    display: block;
+    padding: 14px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.sort ul li a:hover{
+    background-color: #6C4700;
+}
+
+/* product */
+.product{
+    width: 58%;
+    margin: 0 auto;
+    padding: 80px 0 60px 0;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    margin-bottom: 58px;
+}
+
+.product-item-pic{
+    width: 255px;
+    height: 255px;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+.product-item-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 圖片設定開始 */
+
+.index6{
+    object-position: bottom;
+}
+
+.products3{
+    object-position: center 30%;
+}
+
+.products4{
+    object-position: center 20%;
+}
+.products5{
+    object-position: center 40%;
+}
+
+.index4{
+    object-position:0 50%
+}
+
+/* 圖片設定結束 */
+.product-item h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-item p{
+    font-size: 16px;
+}
+
+.price{
+    display: flex;
+    gap:8px;
+}
+
+.now{
+    font-size: 16px;
+}
+
+.original{
+    font-size: 16px;
+    text-decoration: line-through;
+    color:#8D8D8D;
+}
+
+.btn{
+    color:#916000
+}
+
+.favorite{
+    margin-right: 10px;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.page li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.page li a:hover{
+    color: #AC8A46;
+    text-decoration: underline;
+}
+
+/* Subscribe */
+.Subscribe-bg{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true);
+    background-size: 100% auto;
+    background-position:center;
+}
+
+.Subscribe{
+    width: 58%;
+    margin: 0 auto;
+    padding: 312px 0 112px 0;
+}
+
+.Subscribe-item h3{
+    font-size: 32px;
+    color: #8D8D8D;
+    font-weight: bold;
+}
+
+.Subscribe-item form{
+    width: 40%;
+    display: inline-block;
+    background: #916000;
+    border: #916000 solid 2px;
+    border-radius: 4px;
+}
+
+.keyIn{
+    background: #FFFFFF;
+    font-size: 16px;
+    color:#8D8D8D;
+    border: none;
+    width: 70%;
+    padding: 21px 0px 21px 16px;
+    border: #916000 solid 2px;
+    border-radius: 4px;
+}
+
+.keyIn:focus,.keyIn:active{
+    background: #FFFFFF;
+    font-size: 16px;
+    color:#8D8D8D;
+    border: none;
+    border: #916000 solid 2px;
+    border-radius: 4px;
+}
+
+.sent{
+    background-color: #916000;
+    border: #916000 solid 2px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 21px 0px;
+    width: 30%;
+}
+
+.sent:hover{
+    background-color: #6C4700;
+    border: #6C4700 solid 2px;
+}
+
+/* footer */
+.footer-bg{
+    background: #916000;
+}
+
+.footer{
+    padding: 32px 0;
+    width: 58%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogo{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLogo img{
+    width: 128px;
+    height: 38px;
+}
+
+.footerLogo p{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footerMenu{
+    display: flex;
+    gap:36px;
+}
+
+.footerMenu a{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media (max-width:400px) {
+    .menu-pc{
+        display: none;
+    }
+
+    .header{
+        position: relative;
+        width: 100%;
+    }
+
+    .header h1{
+        margin-left: 20px;
+    }
+
+    .menu-mobile-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:19px;
+
+    }
+
+    .menu-mobile-btn-open{
+        background: none;
+        border: none;
+        color: #8D8D8D;
+    }
+
+    .shoppingCart-mobile{
+        display: block;
+        position: relative;
+        color: #8D8D8D;
+    }
+
+    .menu-mobile{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
+    .menu-mobile li{
+        text-align: center;
+    }
+
+    .menu-mobile a{
+        display: block;
+        padding:16px 0;
+        font-size: 20px;
+        line-height: 1.5;
+        background-color: #707070;
+        color: #FFFFFF;
+        border-top: #FFFFFF solid 3px;
+        text-decoration: none;
+        z-index: 10;
+    }
+
+    .wantBuy{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        font-size: 12px;
+        width:16px;
+        height: 13px;
+        text-align: center;
+        background: #916000;
+        border-radius: 7px;
+        color: #FFFFFF;
+    }
+
+/* Subscribe */
+.Subscribe-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Subscribe{
+    width: 100%;
+    padding: 312px 15px 112px 15px;
+}
+
+.Subscribe-item h3{
+    margin-bottom: 20px;
+}
+
+.Subscribe-item form{
+    width: 100%;
+    display: inline-block;
+    background: #916000;
+    border: #916000 solid 2px;
+    border-radius: 4px;
+}
+
+.footer-bg{
+    background: #916000;
+}
+
+.footer{
+    width: 100%;
+    padding: 32px 15px;
+    display: block;
+}
+
+.footerLogo{
+    justify-content:space-between;
+}
+
+.footerMenu{
+    display: none;
+}
+
+.sort{
+    display: none;
+}
+
+.product{
+    width: 100%;
+    padding: 0 15px 40px 15px;
+}
+
+.product-container{
+    gap:15px;
+}
+
+.product-item{
+    margin-bottom: 28px;
+}
+
+.product-item-pic{
+    width: 165px;
+    height: 165px;
+}
+
+.product-item h4{
+    font-size: 20px;
+}
+
+}
